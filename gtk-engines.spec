@@ -2,7 +2,7 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
 Version:	0.12
-Release:	4
+Release:	5
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
@@ -10,9 +10,9 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{vers
 URL:		http://gtk.themes.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool
 BuildRequires:	gtk+-devel >= 1.1.13
 BuildRequires:	imlib-devel >= 1.8
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -52,17 +52,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README ChangeLog
 %attr(755,root,root) %{_libdir}/gtk/themes/engines/lib*.so
-
-%{_datadir}/themes/Pixmap/*
+%{_datadir}/themes/Pixmap
 %{_datadir}/themes/Metal
 %{_datadir}/themes/Notif
 %{_datadir}/themes/Raleigh
