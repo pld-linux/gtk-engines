@@ -2,13 +2,19 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
 Version:	0.5
-Release:	1
+Release:	2
 Copyright:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Source:		ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
+BuildPrereq:	XFree86-devel
+BuildPrereq:	gtk+-devel >= 1.1.13
+BuildPrereq:	glib-devel >= 1.1.13
+BuildPrereq:	imlib-devel >= 1.8
 BuildRoot:	/tmp/%{name}-%{version}-root
+
+%define _prefix /usr/X11R6
 
 %description
 These are the graphical engines for the various GTK+ toolkit themes.
@@ -32,30 +38,30 @@ wygl±dach:
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target_platform} \
-	--prefix=/usr/X11R6 \
-	--disable-static
+export LDFLAGS="-s"
+%configure
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-make exec_prefix=$RPM_BUILD_ROOT/usr/X11R6 prefix=$RPM_BUILD_ROOT/usr/X11R6 install 
+make install DESTDIR=$RPM_BUILD_ROOT
 
-strip --strip-debug $RPM_BUILD_ROOT/usr/X11R6/lib/gtk/themes/engines/lib*.so
+strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/gtk/themes/engines/lib*.so
+
+gzip -9nf README ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README ChangeLog
+%doc {README,ChangeLog}.gz
+%attr(755,root,root) %{_libdir}/gtk/themes/engines/lib*.so
+%{_libdir}/gtk/themes/engines/lib*.la
 
-%dir /usr/X11R6/lib/gtk/themes
-%dir /usr/X11R6/lib/gtk/themes/engines
-%attr(755,root,root) /usr/X11R6/lib/gtk/themes/engines/lib*so
-/usr/X11R6/lib/gtk/themes/engines/lib*la
-
-/usr/X11R6/share/themes
+%{_datadir}/themes/Pixmap/*
+%{_datadir}/themes/Metal/*
+%{_datadir}/themes/Notif/*
+%{_datadir}/themes/Redmond95/*
