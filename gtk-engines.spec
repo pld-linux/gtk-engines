@@ -2,11 +2,12 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
 Version:	0.12
-Release:	5
+Release:	6
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
 Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
+Patch0:		%{name}-memleak.patch
 URL:		http://gtk.themes.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -37,6 +38,7 @@ wygl±dach:
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f acinclude.m4 missing
