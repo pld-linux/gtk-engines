@@ -8,10 +8,10 @@ Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Source:		ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
-BuildPrereq:	XFree86-devel
-BuildPrereq:	gtk+-devel >= 1.1.13
-BuildPrereq:	glib-devel >= 1.1.13
-BuildPrereq:	imlib-devel >= 1.8
+BuildRequires:	XFree86-devel
+BuildRequires:	gtk+-devel >= 1.1.13
+BuildRequires:	glib-devel >= 1.1.13
+BuildRequires:	imlib-devel >= 1.8
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix /usr/X11R6
