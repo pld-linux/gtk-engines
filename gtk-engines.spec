@@ -6,8 +6,6 @@ Release:	4
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
-Group(de):	Themen/Gtk
-Group(pl):	Motywy/Gtk
 Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
 BuildRequires:	autoconf
