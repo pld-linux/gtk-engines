@@ -1,3 +1,8 @@
+#
+#  !!! IMPORTANT !!!
+#
+#  DO NOT CHANGE THIS FILE, IT"S DEPRECATED USE gtk2-engines.spec
+#
 Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
