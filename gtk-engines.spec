@@ -2,10 +2,10 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Motywy do Gtk+
 Name:		gtk-engines
 Version:	0.12
-Release:	6
+Release:	7
 Epoch:		1
 License:	GPL
-Group:		Themes/Gtk
+Group:		Themes/GTK+
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	c867d1ebd6dbea355765d689a11330ec
 Patch0:		%{name}-memleak.patch
@@ -16,7 +16,6 @@ BuildRequires:	gtk+-devel >= 1.1.13
 BuildRequires:	imlib-devel >= 1.8
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 These are the graphical engines for the various GTK+ toolkit themes.
@@ -52,7 +51,8 @@ rm -f acinclude.m4 missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
