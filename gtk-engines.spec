@@ -7,6 +7,7 @@ Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	c867d1ebd6dbea355765d689a11330ec
 Patch0:		%{name}-memleak.patch
 URL:		http://gtk.themes.org/
 BuildRequires:	autoconf
