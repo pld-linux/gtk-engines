@@ -6,7 +6,7 @@ Release:	6
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
-Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{version}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-memleak.patch
 URL:		http://gtk.themes.org/
 BuildRequires:	autoconf
