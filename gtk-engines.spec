@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
-Source:		ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel >= 1.1.13
