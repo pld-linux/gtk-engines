@@ -1,8 +1,8 @@
 Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
-Version:	0.5
-Release:	2
+Version:	0.7
+Release:	1
 Copyright:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
