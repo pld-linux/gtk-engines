@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%attr(755,root,root) %{_libdir}/gtk-2.0/2.0.0/engines
+%attr(755,root,root) %{_libdir}/gtk-2.0/2.0.100/engines
 
 %{_datadir}/themes/Metal
 %{_datadir}/themes/Redmond95
