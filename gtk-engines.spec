@@ -42,8 +42,8 @@ wygl±dach:
 rm -f acinclude.m4 missing
 libtoolize --copy --force
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
