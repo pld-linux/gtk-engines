@@ -1,14 +1,17 @@
-Summary:     Default GTK+ theme engines
-Summary(pl): Tematy do Gtk+
-Name:        gtk-engines
-Version:     0.1
-Release:     2
-Copyright:   GPL
-Group:       X11/Libraries
-Source:      gtk-engines-%{version}.tar.gz
-URL:         http://gtk.themes.org/
-Requires:    imlib = 1.8.2, gtk+ = 1.1.12, glib = 1.1.12,
-BuildRoot:   /tmp/%{name}-%{version}-root
+Summary:	Default GTK+ theme engines
+Summary(pl):	Tematy do Gtk+
+Name:		gtk-engines
+Version:	0.1
+Release:	2d
+Copyright:	GPL
+Group:		X11/Libraries
+Group(pl):	X11/Biblioteki
+Source:		ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{name}-%{version}.tar.gz
+URL:		http://gtk.themes.org/
+Requires:	imlib = 1.9.2
+Requires:	gtk+ = 1.1.13
+Requires:	glib = 1.1.13
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 These are the graphical engines for the various GTK+ toolkit themes.
@@ -50,9 +53,10 @@ strip --strip-debug $RPM_BUILD_ROOT/usr/X11R6/lib/gtk/themes/engines/lib*.so.*.*
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %doc README ChangeLog
-/usr/X11R6/lib/gtk/themes/engines
+%dir /usr/X11R6/lib/gtk/themes/engines
+/usr/X11R6/lib/gtk/themes/engines/*
 /usr/X11R6/share/themes/Pixmap
 /usr/X11R6/share/themes/Metal
 /usr/X11R6/share/themes/Notif
