@@ -7,7 +7,7 @@ Copyright:   GPL
 Group:       X11/Libraries
 Source:      gtk-engines-%{version}.tar.gz
 URL:         http://gtk.themes.org/
-Requires:    gtk = 1.1.11, glib = 1.1.11
+Requires:    imlib = 1.8.2, gtk+ = 1.1.12, glib = 1.1.12,
 BuildRoot:   /tmp/%{name}-%{version}-root
 
 %description
@@ -62,6 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 * Mon Jan 04 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.1-2]
 - added -q %setup parameter,
+- added "Requires: gnome-libs = 0.99.2, gtk = 1.1.12, glib = 1.1.12"
 - added LDFLAGS="-s" to ./configure enviroment,
 - changed Buildroot to /tmp/%%{name}-%%{version}-root,
 - added using %%{name} and %%{version} in Source,
