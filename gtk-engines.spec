@@ -12,7 +12,7 @@ BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel >= 1.1.13
 BuildRequires:	glib-devel >= 1.1.13
 BuildRequires:	imlib-devel >= 1.8
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _prefix /usr/X11R6
 
