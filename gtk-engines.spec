@@ -16,7 +16,6 @@ BuildRequires:	imlib-devel >= 1.8
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 These are the graphical engines for the various GTK+ toolkit themes.
