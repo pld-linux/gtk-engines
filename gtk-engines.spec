@@ -1,8 +1,8 @@
 Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
-Version:	0.1
-Release:	2d
+Version:	0.4
+Release:	1
 Copyright:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
@@ -47,7 +47,7 @@ install -d $RPM_BUILD_ROOT
 
 make exec_prefix=$RPM_BUILD_ROOT/usr/X11R6 prefix=$RPM_BUILD_ROOT/usr/X11R6 install 
 
-strip --strip-debug $RPM_BUILD_ROOT/usr/X11R6/lib/gtk/themes/engines/lib*.so.*.*
+strip --strip-debug $RPM_BUILD_ROOT/usr/X11R6/lib/gtk/themes/engines/lib*.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,12 +55,13 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog
+
+%dir /usr/X11R6/lib/gtk/themes
 %dir /usr/X11R6/lib/gtk/themes/engines
-/usr/X11R6/lib/gtk/themes/engines/*
-/usr/X11R6/share/themes/Pixmap
-/usr/X11R6/share/themes/Metal
-/usr/X11R6/share/themes/Notif
-/usr/X11R6/share/themes/Redmond95
+%attr(755,root,root) /usr/X11R6/lib/gtk/themes/engines/lib*so
+/usr/X11R6/lib/gtk/themes/engines/lib*la
+
+/usr/X11R6/share/themes
 
 %changelog
 * Mon Jan 04 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
