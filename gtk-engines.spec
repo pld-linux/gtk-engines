@@ -40,7 +40,7 @@ wygl±dach:
 
 %build
 rm -f acinclude.m4 missing
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 %{__autoconf}
 %{__automake}
