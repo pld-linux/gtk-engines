@@ -2,7 +2,7 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
 Version:	0.12
-Release:	3
+Release:	4
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
