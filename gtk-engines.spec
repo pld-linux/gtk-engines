@@ -59,9 +59,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,ChangeLog}.gz
 %attr(755,root,root) %{_libdir}/gtk/themes/engines/lib*.so
-%{_libdir}/gtk/themes/engines/lib*.la
+%attr(755,root,root) %{_libdir}/gtk/themes/engines/lib*.la
 
 %{_datadir}/themes/Pixmap/*
-%{_datadir}/themes/Metal/*
-%{_datadir}/themes/Notif/*
-%{_datadir}/themes/Redmond95/*
+%{_datadir}/themes/Metal
+%{_datadir}/themes/Notif
+%{_datadir}/themes/Redmond95
