@@ -25,6 +25,7 @@ Included themes are:
  - Motif
  - win95
  - Pixmap
+ - Raleigh
  - Metal (Java swing-like)
 
 %description -l pl
@@ -33,6 +34,7 @@ wygl±dach:
  - Motif
  - win95
  - Pixmap
+ - Raleigh
  - Metal (Java swing-like)
 
 %prep
