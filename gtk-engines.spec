@@ -2,7 +2,7 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
 Version:	0.12
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
@@ -10,8 +10,10 @@ Group(de):	Themen/Gtk
 Group(pl):	Motywy/Gtk
 Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
+BuildRequires:	autoconf
 BuildRequires:	gtk+-devel >= 1.1.13
 BuildRequires:	imlib-devel >= 1.8
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -36,6 +38,11 @@ wygl±dach:
 %setup -q
 
 %build
+rm -f acinclude.m4
+%{__libtoolize} --copy --force
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
