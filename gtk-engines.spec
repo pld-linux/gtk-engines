@@ -5,8 +5,9 @@ Version:	0.11
 Release:	1
 Epoch:		1
 License:	GPL
-Group:		X11/Libraries
-Group(pl):	X11/Biblioteki
+Group:		Themes/Gtk
+Group(de):	Themen/Gtk
+Group(pl):	Motywy/Gtk
 Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
 BuildRequires:	gtk+-devel >= 1.1.13
