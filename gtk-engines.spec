@@ -2,7 +2,7 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Motywy do Gtk+
 Name:		gtk-engines
 Version:	0.12
-Release:	7
+Release:	8
 Epoch:		1
 License:	GPL
 Group:		Themes/GTK+
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog
 %attr(755,root,root) %{_libdir}/gtk/themes/engines/lib*.so
 %{_datadir}/themes/Pixmap
-%{_datadir}/themes/Metal
+%{_datadir}/themes/Metal/*
 %{_datadir}/themes/Notif
 %{_datadir}/themes/Raleigh
 %{_datadir}/themes/Redmond95
