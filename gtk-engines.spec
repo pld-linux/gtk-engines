@@ -8,9 +8,9 @@ Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Source:		ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{name}-%{version}.tar.gz
 URL:		http://gtk.themes.org/
-Requires:	imlib = 1.9.2
-Requires:	gtk+ = 1.1.13
-Requires:	glib = 1.1.13
+Requires:	imlib = 1.9.3
+Requires:	gtk+ = 1.2.0
+Requires:	glib = 1.2.0
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -64,6 +64,10 @@ rm -rf $RPM_BUILD_ROOT
 /usr/X11R6/share/themes
 
 %changelog
+* Sat Feb 27 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [0.4-1]
+- Updated Requires (gtk = 1.2.0, glib = 1.2.0, imlib = 1.9.3).
+
 * Mon Jan 04 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.1-2]
 - added -q %setup parameter,
