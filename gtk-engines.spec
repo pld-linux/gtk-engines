@@ -2,11 +2,11 @@ Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
 Version:	1.9.0
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Themes/Gtk
-Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/1.9/%{name}-%{version}.tar.bz2
 URL:		http://gtk.themes.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%attr(755,root,root) %{_libdir}/gtk-2.0/2.0.100/engines
+%attr(755,root,root) %{_libdir}/gtk-2.0/2.0.*/engines
 
 %{_datadir}/themes/Metal
 %{_datadir}/themes/Redmond95
