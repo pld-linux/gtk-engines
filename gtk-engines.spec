@@ -1,9 +1,9 @@
 Summary:	Default GTK+ theme engines
 Summary(pl):	Tematy do Gtk+
 Name:		gtk-engines
-Version:	0.7
+Version:	0.9
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Source:		ftp://ftp.gnome.org/pub/GNOME/stable/sources/gtk-engines/%{name}-%{version}.tar.gz
@@ -19,20 +19,18 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 %description
 These are the graphical engines for the various GTK+ toolkit themes.
 Included themes are:
-
-  - Motif
-  - win95
-  - Pixmap
-  - Metal (Java swing-like)
+ - Motif
+ - win95
+ - Pixmap
+ - Metal (Java swing-like)
 
 %description
 Pakiet ten zawiera modu³y tematów do biblioteki Gtk+ o nastêpuj±cych
 wygl±dach:
-
-  - Motif
-  - win95
-  - Pixmap
-  - Metal (Java swing-like)
+ - Motif
+ - win95
+ - Pixmap
+ - Metal (Java swing-like)
 
 %prep
 %setup -q
