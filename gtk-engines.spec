@@ -24,7 +24,7 @@ Included themes are:
  - Pixmap
  - Metal (Java swing-like)
 
-%description
+%description -l pl
 Pakiet ten zawiera modu³y tematów do biblioteki Gtk+ o nastêpuj±cych
 wygl±dach:
  - Motif
