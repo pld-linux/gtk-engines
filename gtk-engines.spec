@@ -1,5 +1,5 @@
 Summary:	Default GTK+ theme engines
-Summary(pl):	Motywy do GTK+
+Summary(pl.UTF-8):   Motywy do GTK+
 Name:		gtk-engines
 Version:	0.12
 Release:	8
@@ -26,9 +26,9 @@ Included themes are:
  - Raleigh
  - Metal (Java swing-like)
 
-%description -l pl
-Pakiet ten zawiera modu³y motywów do biblioteki GTK+ o nastêpuj±cych
-wygl±dach:
+%description -l pl.UTF-8
+Pakiet ten zawiera moduÅ‚y motywÃ³w do biblioteki GTK+ o nastÄ™pujÄ…cych
+wyglÄ…dach:
  - Motif
  - win95
  - Pixmap
