@@ -1,5 +1,5 @@
 Summary:	Default GTK+ theme engines
-Summary(pl.UTF-8):   Motywy do GTK+
+Summary(pl.UTF-8):	Motywy do GTK+
 Name:		gtk-engines
 Version:	0.12
 Release:	8
