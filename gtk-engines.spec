@@ -4,9 +4,9 @@ Name:		gtk-engines
 Version:	0.12
 Release:	8
 Epoch:		1
-License:	GPL
+License:	GPL v2
 Group:		Themes/GTK+
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gtk-engines/%{version}/%{name}-%{version}.tar.gz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtk-engines/0.12/%{name}-%{version}.tar.gz
 # Source0-md5:	c867d1ebd6dbea355765d689a11330ec
 Patch0:		%{name}-memleak.patch
 URL:		http://gtk.themes.org/
@@ -40,7 +40,7 @@ wyglądach:
 %patch0 -p1
 
 %build
-rm -f acinclude.m4 missing
+rm -f acinclude.m4
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
